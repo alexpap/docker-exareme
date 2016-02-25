@@ -5,12 +5,13 @@
     - [stream-server] (https://github.com/alexpap/docker-streamserver)
     
 * Running
-```
-cd docker-exareme
-docker build -t exareme .
-docker run -i -t --rm -P --link streamserver --name exareme exareme
-```
+    ```
+    cd docker-exareme
+    docker build -t exareme .
+    docker run -i -t --rm -p 9090:9090  --link streamserver --name exareme exareme
+    ```
 
+* Register query
 
 * Console
 
